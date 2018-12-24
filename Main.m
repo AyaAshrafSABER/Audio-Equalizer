@@ -71,7 +71,7 @@ signal_9=signal_9*(10^(gain_9/20));
 
 composite_signal = signal_1 + signal_2 + signal_3 + signal_4 + signal_5 + signal_6 + signal_7 + signal_8 + signal_9;
 
-t = linspace(0,length(composite_signal)/Fs,length(Y));
+t = linspace(0,length(composite_signal)/Fs,length(composite_signal));
 plot(t,composite_signal);
         Nfft = length(composite_signal);
         f=linspace(0, Fs, Nfft);
